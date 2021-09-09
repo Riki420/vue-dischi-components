@@ -1,23 +1,29 @@
 <template>
-    <div class="card bg-dark py-2 text-center text-white">
-                        <div class="card-body">
-                            <figure>
-                                <img src="../assets/images/demo.jpg" alt="demo" class="img-fluid">
-                            </figure>
-                            <hr>
-                            <h5>Demo</h5>
-                            <address>Bon Jovi</address>
-                        </div>
-                    </div>     
-  
+    <div class="col mt-3">
+        <div class="card my-s-height bg-dark py-2 text-center text-white pointer">
+            <div class="card-body">
+                <figure>
+                    <img :src="album.poster" :alt="album.title" class="img-fluid">
+                </figure>
+                <hr>
+                <h5>{{ album.title }}</h5>
+                <address>{{ album.author }}</address>
+            </div>
+        </div>     
+    </div>
+        
 </template>
 
 <script>
 export default {
-    name: "Albumcard"
+    name: "Albumcard",
+    props: ['album']
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.my-s-height{
+    height: 380px;
+}
 
 </style>
