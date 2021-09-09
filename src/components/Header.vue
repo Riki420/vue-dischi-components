@@ -1,14 +1,17 @@
 <template>
 <!--HEADER-->
-    <header class="container-fluid">
+    <header class="container-fluid bg-head">
         <div class="row">
             <div class="col-12">
                 <div class="container">
-                    <div class="row py-4 bg-head">
-                        <div class="col-1 text-white">
+                    <div class="row py-2 d-flex align-items-center">
+                        <div class="col-1">
                             <figure>
                                 <img src="../assets/images/logo.png" alt="logo-spotify" class="img-fluid">
                             </figure>
+                        </div>
+                        <div class="col text-white">
+                            <h1>SPOTIFY</h1>
                         </div>
                     </div>
                 </div>
