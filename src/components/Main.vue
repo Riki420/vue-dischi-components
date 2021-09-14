@@ -5,7 +5,7 @@
             <div class="row">
                 <!--SELECT GENRES-->
                 <div class="col">
-                    <Select />
+                    <Select :genres="genres" />
                 </div>
             </div>
         </div>     
@@ -42,6 +42,11 @@ export default {
     axios.get('https://flynn.boolean.careers/exercises/api/array/music').then((res)=> {
         this.albums = res.data.response
         
+        this.albums.forEach((element) => {
+          if(!this.genres.includes(element.genre)) {
+            this.genres.push(element.genre)
+          }
+         });
         }
         
     

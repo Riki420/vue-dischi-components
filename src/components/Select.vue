@@ -11,7 +11,7 @@
 <script>
 export default {
     name: "Select",
-    props: ['genre'],
+    props: ['genres'],
     data(){
         return{
         }
